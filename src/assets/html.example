@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="a descrição do seu site">
+    <title>Título do Documento</title>
+  </head>
+  <body>
+    <div>Tag para criar-se uma 'caixa, um bloco, mais utilizada com "Cascading Style Sheets (Folhas de Estilo em Cascata)</div>
+    <img src="endereço_de_uma_imagem.jpg" alt="Descrição Alternativa" />
+    <a href="http://www.satc.edu.br">Site da SATC</a>
+  </body>
+</html>
