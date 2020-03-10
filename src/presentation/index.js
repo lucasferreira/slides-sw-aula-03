@@ -14,6 +14,7 @@ const images = {
   engSimbWhite: require("../assets/eng_simb_white.png"),
   caniuse: require("../assets/caniuse.png"),
   saw: require("../assets/saw.jpg"),
+  desafio: require("../assets/desafio.png"),
   wannaPlay: require("../assets/do-you-wanna-play-a-game.jpg"),
 };
 
@@ -277,6 +278,7 @@ export default class Presentation extends React.Component {
           </Text>
         )}
         {this.renderSlideTituloImagem("LET THE GAMES BEGIN", images.saw, 480)}
+        {this.renderSlideTituloImagem("DESAFIO DE HOJE", images.desafio, 620)}
         {this.renderSlideTituloLista("HTML5", [
           "É a quinta versão da linguagem HTML",
           "Traz consigo importantes mudanças quanto ao papel do HTML no mundo da Web",
