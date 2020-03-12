@@ -3,8 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <title>Página Demo - Aula HTML & CSS</title>
+    <link rel="stylesheet" type="text/css" href="cadastro.css" />
   </head>
   <body>
-    <!-- demo -->
+    <div class="por-fora">
+      <div id="page">
+        <header>
+          <h1>
+            <a href="http://www.satc.edu.br" target="_blank">
+              <img src="logo.png" alt="SATC" />
+            </a>
+          </h1>
+          <h2>Cadastre-se</h2>
+        </header>
+        <form action="acao-de-contato.php?acao=cadastrar" method="post">
+          <div class="form-group">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="curso">Seu curso:</label>
+            <select name="curso" id="curso">
+              <option>Eng. Web</option>
+              <option>Eng. Mecanica</option>
+              <option>Publicidade</option>
+            </select>
+          </div>
+          <div class="button-group">
+            <button>
+              Cadastrar
+            </button>
+            <a href="#">Voltar</a>
+          </div>
+        </form>
+        <footer>
+          <p>Blablabla - Todos os direitos reservados 2020</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
