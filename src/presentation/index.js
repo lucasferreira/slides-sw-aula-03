@@ -16,6 +16,7 @@ const images = {
   saw: require("../assets/saw.jpg"),
   desafio: require("../assets/desafio.png"),
   wannaPlay: require("../assets/do-you-wanna-play-a-game.jpg"),
+  modeloLayoutChat: require("../assets/modelo_layout_chat.png"),
 };
 
 preloader(images);
@@ -231,6 +232,12 @@ export default class Presentation extends React.Component {
             <code>{`<style>`}</code> e <code>{`<script>`}</code>
           </span>,
           "Não confundir com o topo visual do site (HEADER)",
+          <span>
+            Site com dicas e possibilidades de elementos a serem usados dentro da tag <code>{`<head>`}</code>:{" "}
+            <a href="https://htmlhead.dev/" target="_blank">
+              https://htmlhead.dev/
+            </a>
+          </span>,
         ])}
         {this.renderSlideTituloLista(
           "Corpo (BODY)",
@@ -278,7 +285,7 @@ export default class Presentation extends React.Component {
           </Text>
         )}
         {this.renderSlideTituloImagem("LET THE GAMES BEGIN", images.saw, 480)}
-        {this.renderSlideTituloImagem("DESAFIO DE HOJE", images.desafio, 620)}
+        {this.renderSlideTituloImagem("OBJETIVO DESTA AULA", images.desafio, 620)}
         {this.renderSlideTituloLista("HTML5", [
           "É a quinta versão da linguagem HTML",
           "Traz consigo importantes mudanças quanto ao papel do HTML no mundo da Web",
@@ -352,14 +359,32 @@ export default class Presentation extends React.Component {
           "Trazer a devida importância aos leitores de telas e indexadores de sites de busca",
         ])}
         {this.renderSlideTituloImagem("Can I Use...", images.caniuse, 680)}
-        {this.renderSlideTituloLista("Sites Legais", [
-          "https://www.w3schools.com/html/default.asp",
-          "https://www.w3schools.com/css/default.asp",
-          "https://developer.mozilla.org/en-US/docs/Web/HTML",
-          "https://developer.mozilla.org/en-US/docs/Web/CSS",
-          "http://www.w3c.br/pub/Materiais/PublicacoesW3C/cartilha-w3cbr-acessibilidade-web-fasciculo-I.html",
-          "https://tableless.com.br",
-          "https://caniuse.com",
+        {this.renderSlideTituloLista(
+          "Sites Legais",
+          [
+            "https://www.w3schools.com/html/default.asp",
+            "https://www.w3schools.com/css/default.asp",
+            "https://developer.mozilla.org/en-US/docs/Web/HTML",
+            "https://developer.mozilla.org/en-US/docs/Web/CSS",
+            "http://www.w3c.br/pub/Materiais/PublicacoesW3C/cartilha-w3cbr-acessibilidade-web-fasciculo-I.html",
+            "https://tableless.com.br",
+            "https://caniuse.com",
+          ].map(uri => (
+            <a href={uri} target="_blank" key={uri}>
+              {uri}
+            </a>
+          ))
+        )}
+        {this.renderSlideTituloImagem("DESAFIO PARA VOCÊS", images.modeloLayoutChat, 540)}
+        {this.renderSlideTituloLista("Exercício / Atividade", [
+          "Vamos praticar um pouco de HTML + CSS",
+          'Criar uma breve tela, única, em HTML, que junto de CSS chegue nos resultados da imagem anterior, criando um layout de atendimento on-line "fake"',
+          "Podem começar hoje (se sobrar tempo) com entrega até a próxima terça-feira (23/03) às 18h",
+          "Zipar os arquivos do exercício e postar no Portal do Aluno / AVA ~ ainda vou abrir o espaço, aviso vocês no grupo",
+          <span>
+            <strong>Spoiler:</strong> Não percam esse exercício, em algumas aulas iremos dar mais uma "melhorada" nesse{" "}
+            <em>chat</em>
+          </span>,
         ])}
       </Deck>
     );
