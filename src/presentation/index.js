@@ -52,7 +52,8 @@ export default class Presentation extends React.Component {
           textFont="secondary"
           size={5}
           style={{ position: "absolute", bottom: 90, right: 50 }}
-          textColor="tertiary">
+          textColor="tertiary"
+        >
           Prof. Lucas Ferreira
         </Heading>
       </Slide>
@@ -360,14 +361,13 @@ export default class Presentation extends React.Component {
         ])}
         {this.renderSlideTituloImagem("Can I Use...", images.caniuse, 680)}
         {this.renderSlideTituloLista(
-          "Sites Legais",
+          "Conteúdo Adicional",
           [
             "https://www.w3schools.com/html/default.asp",
             "https://www.w3schools.com/css/default.asp",
             "https://developer.mozilla.org/en-US/docs/Web/HTML",
             "https://developer.mozilla.org/en-US/docs/Web/CSS",
             "http://www.w3c.br/pub/Materiais/PublicacoesW3C/cartilha-w3cbr-acessibilidade-web-fasciculo-I.html",
-            "https://tableless.com.br",
             "https://caniuse.com",
           ].map(uri => (
             <a href={uri} target="_blank" key={uri}>
@@ -375,15 +375,23 @@ export default class Presentation extends React.Component {
             </a>
           ))
         )}
-        {this.renderSlideTituloImagem("DESAFIO PARA VOCÊS", images.modeloLayoutChat, 540)}
+        {this.renderSlideTituloImagem("NOSSO PRIMEIRO EXERCÍCIO", images.modeloLayoutChat, 540)}
         {this.renderSlideTituloLista("Exercício / Atividade", [
           "Vamos praticar um pouco de HTML + CSS",
           'Criar uma breve tela, única, em HTML, que junto de CSS chegue nos resultados da imagem anterior, criando um layout de atendimento on-line "fake"',
-          "Podem começar hoje (se sobrar tempo) com entrega até a próxima terça-feira (23/03) às 18h",
-          "Zipar os arquivos do exercício e postar no Portal do Aluno / AVA ~ ainda vou abrir o espaço, aviso vocês no grupo",
+          "Podem começar hoje (se sobrar tempo) com entrega até a próxima terça-feira (15/03) às 20h",
           <span>
-            <strong>Spoiler:</strong> Não percam esse exercício, em algumas aulas iremos dar mais uma "melhorada" nesse{" "}
-            <em>chat</em>
+            <strong>Entrega:</strong> Criar um repositório no github (público) e inserir o exercício lá (por enquanto o
+            mínimo, html, css e imagens apenas); OU...
+          </span>,
+          <span>
+            Para quem não se sentir confortável em mexer com github neste momento, zipar os arquivos do exercício e
+            postar no Portal do Aluno / AVA ~ ainda vou abrir o espaço, aviso vocês no grupo quando já estiver liberado
+            para <em>entrega</em>
+          </span>,
+          <span>
+            <strong>Spoiler/Aviso:</strong> Não percam esse exercício, em algumas aulas iremos dar mais uma "melhorada"
+            nesse <em>chat</em>
           </span>,
         ])}
       </Deck>
