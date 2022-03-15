@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Helvetica;
+  font-family: Arial;
   font-size: 16px;
 }
 
@@ -16,77 +16,61 @@ body {
 
 header {
   display: flex;
+  border-bottom: 2px solid black;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
-  border-bottom: 2px solid green;
-  margin-bottom: 21px;
+  padding: 12px 20px;
 }
-
-h1:hover {
-  margin-left: 20px;
-}
-
-h2 {
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: -1px;
+header h2 {
+  font-size: 32px;
+  letter-spacing: -2px;
   color: green;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 13px;
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 12px;
   font-weight: bold;
-  padding: 12px;
-  border-top: 2px solid green;
-  margin-top: 21px;
 }
 
 form {
-  padding: 12px;
+  padding: 26px 20px;
 }
 
-.form-comp {
+form .input {
   margin-bottom: 16px;
 }
-
-label {
+form .input label {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
-
-input,
-select,
-textarea {
+form .input input {
   display: block;
-  font-size: 16px;
-  padding: 8px 6px;
   width: 100%;
+  font-size: 16px;
+  padding: 8px;
   border: 1px solid green;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
-.form-button {
-  text-align: center;
+form .row-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
 }
-
-button {
-  margin: 9px auto;
-  font-size: 21px;
-  font-weight: bold;
-  padding: 12px 21px;
+form .row-button button {
+  font-size: 24px;
+  border: 0;
   background-color: green;
   color: white;
-  border: 0;
-  border-radius: 16px;
+  padding: 12px 21px;
+  border-radius: 6px;
   cursor: pointer;
 }
-
-button:hover {
-  background-color: #dc00ff;
-  transform: translate(2px, 2px);
+form .row-button button:hover {
+  background-color: black;
 }
